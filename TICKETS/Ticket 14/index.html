@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="calculator">
+    <h1>Calculator</h1>
+
+    <div class="inputs">
+      <input type="number" id="num1" placeholder="First number">
+      <input type="number" id="num2" placeholder="Second number">
+    </div>
+
+    <div class="buttons">
+      <button onclick="calculate('add')">+</button>
+      <button onclick="calculate('subtract')">-</button>
+      <button onclick="calculate('multiply')">×</button>
+      <button onclick="calculate('divide')">÷</button>
+
+      <button onclick="calculate('power')">x²</button>
+      <button onclick="calculate('modulus')">%</button>
+      <button onclick="calculate('sqrt')">√</button>
+      <button onclick="calculate('percentage')">%</button>
+
+      <button onclick="clearCalculator()" class="clear">Clear</button>
+    </div>
+
+    <div id="result" class="result">Result will appear here</div>
+
+    <h3>History</h3>
+    <div id="history" class="history"></div>
+    <button onclick="clearHistory()">Clear History</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
