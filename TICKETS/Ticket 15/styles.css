@@ -1,0 +1,37 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+li {
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Completed */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Priority Colors */
+.low {
+  background: #d4edda;
+}
+
+.medium {
+  background: #fff3cd;
+}
+
+.high {
+  background: #f8d7da;
+}
+
+/* Buttons */
+button {
+  margin-left: 5px;
+  cursor: pointer;
+}

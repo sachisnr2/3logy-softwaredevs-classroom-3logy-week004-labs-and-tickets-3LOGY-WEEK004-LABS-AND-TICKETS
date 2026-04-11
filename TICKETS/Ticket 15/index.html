@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced To-Do</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>Advanced To-Do List</h2>
+
+  <!-- Input -->
+  <input type="text" id="taskInput" placeholder="Enter task">
+
+  <!-- Priority -->
+  <select id="priority">
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+    <option value="high">High ⚠️</option>
+  </select>
+
+  <button id="addBtn">Add Task</button>
+
+  <!-- Filter -->
+  <div>
+    <button data-filter="all">All</button>
+    <button data-filter="active">Active</button>
+    <button data-filter="completed">Completed</button>
+  </div>
+
+  <!-- Sort -->
+  <div>
+    <button data-sort="priority">Sort by Priority</button>
+    <button data-sort="date">Sort by Date</button>
+  </div>
+
+  <!-- Stats -->
+  <div id="stats"></div>
+
+  <!-- Counter -->
+  <p id="counter"></p>
+
+  <!-- Task List -->
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
